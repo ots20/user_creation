@@ -21,7 +21,7 @@ class TestUserManagement(unittest.TestCase):
 
     def setUp(self):
         # REMEMBER THE ENVIRONMENT!!!!
-        self.environment = 'xss'
+        self.environment = 'xa'
         self.endpoint = 'https://staging:IdQUaMsyRMBO@dev.z-dn.net/graphql/{}?content-type=application/json'.format(self.environment)
 
     def test_create_user(self):
@@ -65,5 +65,3 @@ class TestUserManagement(unittest.TestCase):
             user_list.append(self.created_user)
         print(user_list)
 
-    def test_method(self):
-        print("just a test")
