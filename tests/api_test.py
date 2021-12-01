@@ -64,3 +64,6 @@ class TestUserManagement(unittest.TestCase):
             self.test_create_user()
             user_list.append(self.created_user)
         print(user_list)
+
+    def test_method(self):
+        print("just a test")
